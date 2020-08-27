@@ -1,0 +1,63 @@
+@import "libs";
+@import "vars"; 
+@import "fonts";
+
+
+.page{
+    display:flex;
+    margin:0;
+    padding:0;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+/*
+.page>*{
+    outline: 1px solid black;
+}
+*/
+
+.aside{
+    max-width: 200px;
+    height:100vh;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.03);
+    &__block{
+        min-height: 225px;
+        border-bottom: 1px solid rgba($grey-1, 0.1) ;
+    }
+    &__row{
+        display:block;
+        width:185px;
+        min-height:48px;
+        padding-left:13px;
+        font-size: 14px;
+        line-height: 19px;
+        color: $grey-1;
+        text-decoration: none;
+    }
+    &__row_active{
+        border-left: 2px solid $violet-1;
+        background-color: rgba(40, 71, 107, 0.03);
+    }
+    &__row:hover{
+        background-color: rgba(40, 71, 107, 0.03);
+    }
+    &__table-name{
+        display:flex;
+        align-items: center;
+        min-height:48px;
+        padding-left:30px;
+        background: url('../img/monitor.svg') no-repeat  8px 16px;
+    }
+    &__table-name_active{
+        display:flex;
+        align-items: center;
+        min-height:48px;
+        background: url('../img/monitor_active.svg') no-repeat  10px 16px ;
+    }
+
+    }
+
+
+
+
+
+

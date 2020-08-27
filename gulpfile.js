@@ -53,7 +53,8 @@ gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
             baseDir: "app/"
-        }
+        },
+        index: "page2.html"
     });
 });
 
